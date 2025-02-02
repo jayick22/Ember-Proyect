@@ -13,7 +13,7 @@
   "scripts": {
     "build": "ember build --environment=production",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\" --prefixColors auto",
-    "lint:css": "stylelint \"**/*.css\"",
+    "lint:css": "stylelint '**/*.{css,scss,sass}'",
     "lint:css:fix": "concurrently \"npm:lint:css -- --fix\"",
     "lint:fix": "concurrently \"npm:lint:*:fix\" --names \"fix:\" --prefixColors auto",
     "lint:hbs": "ember-template-lint .",
